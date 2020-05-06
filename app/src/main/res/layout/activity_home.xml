@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layoutdark"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="@color/colorBlack80"
+                android:layout_margin="16dp"
+                android:textSize="28sp"
+                android:layout_weight="1"
+                android:text="Dashboard" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:onClick="goToProfile"
+                app:srcCompat="@drawable/ic_person_24px" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:onClick="signOut"
+                app:srcCompat="@drawable/ic_exit_to_app_24px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:background="@color/layout"
+                card_view:cardCornerRadius="21dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/card_greeting"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_rounded"
+                    android:layout_height="130dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/greeting"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Greeting"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_heading"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/body_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Status Tubuhmu, ..."
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_subheading"
+                        app:lineHeight="20dp" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/bmi"-->
+<!--                        android:fontFamily="@font/baloo"-->
+<!--                        android:text="Index masa Tubuh: "-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="@dimen/item"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/calorie_diet"-->
+<!--                        android:fontFamily="@font/roboto_medium"-->
+<!--                        android:text="Diet Kalori: "-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="@dimen/font_subheading"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/big_portion"-->
+<!--                        android:text="Porsi Makan Besar: "-->
+<!--                        android:fontFamily="@font/roboto_medium"-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="@dimen/font_subheading"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/small_portion"-->
+<!--                        android:fontFamily="@font/roboto_medium"-->
+<!--                        android:text="Porsi Makan Kecil: "-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="@dimen/font_subheading"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/calorie_intake"-->
+<!--                        android:fontFamily="@font/baloo"-->
+<!--                        android:text="Kebutuhan Kalori: "-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="@dimen/item"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/roboto_bold"
+                android:text="Makan Pagi"
+                android:textSize="@dimen/font_heading"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/colorBlack80"
+                android:layout_marginLeft="16dp"
+                android:scrollbars = "vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/content"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/roboto_bold"
+                android:text="Makan Siang"
+                android:textSize="@dimen/font_heading"
+                android:textColor="@color/colorBlack80"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:scrollbars = "vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/content_siang"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/roboto_bold"
+                android:text="Makan Malam"
+                android:textSize="@dimen/font_heading"
+                android:textColor="@color/colorBlack80"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:scrollbars = "vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/content_malam"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/roboto_bold"
+                android:text="Cemilan"
+                android:textSize="@dimen/font_heading"
+                android:textColor="@color/colorBlack80"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:scrollbars = "vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/content_sarapan"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

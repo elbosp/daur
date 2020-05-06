@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/layout"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Selamat datang di daur!"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack80"
+            android:textSize="@dimen/font_heading" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="339dp"
+            android:layout_height="507dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-24dp"
+            android:foregroundGravity="center_vertical"
+            app:srcCompat="@drawable/onboarding" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/ic_wave" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/tosca" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Daur adalah asisten pribadi yang membantu memberikan rekomnedasi makan untuk menurunkan berat badan Anda"
+            android:textColor="@color/colorBlack05"
+            android:textSize="@dimen/font_smallerheading"
+            android:layout_marginBottom="120dp"
+            app:lineHeight="@dimen/size_4" />
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/size_2"
+            android:background="@drawable/btn_rounded_new"
+            android:onClick="next"
+            android:text="Mulai"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack05" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

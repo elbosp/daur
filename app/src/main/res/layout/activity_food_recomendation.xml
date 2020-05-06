@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodRecomendationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Sarapan"
+                android:textStyle="bold"
+                android:id="@+id/label_sarapan"/>
+
+            <TextView
+                android:id="@+id/menu_sarapan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="17sp"
+                android:text="Menu 1"
+                android:layout_below="@+id/label_sarapan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Makan Siang"
+                android:textStyle="bold"
+                android:id="@+id/label_makan_siang"
+                android:layout_below="@+id/menu_sarapan"/>
+
+            <TextView
+                android:id="@+id/menu_makan_siang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="17sp"
+                android:text="Menu 1"
+                android:layout_below="@+id/label_makan_siang"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Makan Malam"
+                android:textStyle="bold"
+                android:id="@+id/label_makan_malam"
+                android:layout_below="@+id/menu_makan_siang"/>
+
+            <TextView
+                android:id="@+id/menu_makan_malam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="17sp"
+                android:text="Menu 1"
+                android:layout_below="@+id/label_makan_malam"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Cemilan 1"
+                android:textStyle="bold"
+                android:id="@+id/label_cemilan_1"
+                android:layout_below="@+id/menu_makan_malam"/>
+
+            <TextView
+                android:id="@+id/menu_cemilan_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="17sp"
+                android:text="Menu 1"
+                android:layout_below="@+id/label_cemilan_1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Cemilan 2"
+                android:textStyle="bold"
+                android:id="@+id/label_cemilan_2"
+                android:layout_below="@+id/menu_cemilan_1"/>
+
+            <TextView
+                android:id="@+id/menu_cemilan_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="17sp"
+                android:text="Menu 1"
+                android:layout_below="@+id/label_cemilan_2"/>
+
+            <Button
+                android:id="@+id/btn_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Start Process"
+                android:onClick="processClicked"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

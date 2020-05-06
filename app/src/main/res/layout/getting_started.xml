@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".GettingStarted">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="214dp"
+            android:layout_height="203dp"
+            android:layout_marginBottom="@dimen/size_2"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="200dp"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            app:srcCompat="@drawable/getting_started" />
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginBottom="@dimen/size_1"
+            android:gravity="center|center_vertical"
+            android:text="Selamat Datang di Daur"
+            android:textColor="@color/colorBlack100"
+            android:textSize="21sp"
+            app:fontFamily="@font/roboto_medium" />
+
+        <TextView
+            android:id="@+id/sub_Heading"
+            android:layout_width="394dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Yuk, jalani hidup yang lebih sehat dan aktif \ndengan rekomendasi kami"
+            android:textColor="@color/colorBlack80"
+            android:textSize="@dimen/font_subheading"
+            app:fontFamily="@font/roboto"
+            app:lineHeight="@dimen/size_4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:onClick="next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/size_4"
+        android:layout_marginLeft="@dimen/size_2"
+        android:layout_marginRight="@dimen/size_2"
+        android:background="@drawable/btn_rounded"
+        android:shadowColor="@color/colorPrimary"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack05" />
+
+</RelativeLayout>

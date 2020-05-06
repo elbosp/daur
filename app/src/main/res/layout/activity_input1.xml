@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:onClick="screenOnclick"
+    tools:context=".Input1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/layoutlight">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Daftar"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack80"
+            android:textSize="@dimen/font_heading" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Lengkapi data kamu"
+            android:textColor="@color/colorBlack80"
+            android:textSize="@dimen/font_subheading" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/et_fill_text_disable"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="12dp"
+                android:paddingLeft="21dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:hint="Masukkan Namamu"
+                android:textColor="@color/colorBlack80"
+                android:textColorHint="@color/colorBlack60"
+                android:textColorLink="@color/colorBlack80"
+                android:textSize="@dimen/font_smallerheading"
+                app:fontFamily="@font/roboto_bold" />
+
+            <EditText
+                android:id="@+id/et_ttl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/et_fill_text_disable"
+                android:hint="Masukkan Tanggal Lahirmu"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:paddingLeft="21dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorBlack80"
+                android:textColorHint="@color/colorBlack60"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_smallerheading"
+                android:onClick="setBirthday"
+                app:fontFamily="@font/roboto_bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp">
+
+                <RadioButton
+                    android:id="@+id/rb_pria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="rbGenderOnClick"
+                    android:text="Laki-laki"
+                    android:background="@drawable/et_fill_text_disable"
+                    android:textColor="@color/colorBlack60"
+                    android:textSize="@dimen/font_smallerheading"
+                    android:paddingBottom="12dp"
+                    android:checked="true"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="16dp"
+                    android:buttonTint="@color/colorBlack80"
+                    android:paddingTop="12dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_wanita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:onClick="rbGenderOnClick"
+                    android:text="Perempuan"
+                    android:background="@drawable/et_fill_text_disable"
+                    android:textColor="@color/colorBlack60"
+                    android:textSize="@dimen/font_smallerheading"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="16dp"
+                    android:buttonTint="@color/colorBlack80"
+                    android:paddingTop="12dp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_2"
+                android:background="@drawable/btn_rounded_new"
+                android:onClick="next"
+                android:text="Selanjutnya"
+                android:enabled="false"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text_background_new" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
